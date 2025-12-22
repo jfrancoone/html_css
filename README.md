@@ -1,3 +1,3 @@
 # html_css
 Estudos de HTML-CSS
-Estou me tornando um profissional de valor
+Estou me tornando um profissional de valor e gerenciando repositórios
