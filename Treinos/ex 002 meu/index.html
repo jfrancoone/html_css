@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Parágrafos
+    </h1>
+    <hr>
+    <p>
+        »»»» Instruções «««« <br>
+
+1ª - Sempre que encontrar o termo "x", estará representando um valor numérico <br>
+
+2ª - Sempre que encontrar o termo "valor", estará representado um valor de qualquer tipo (int, tinyint,nvarchar...) <br>
+
+3ª - Sempre que encontrar o Sinal de "=", poderá ser substituido por um outro qualquer operador de comparação (= &gt;,&lt;,>=,&lt;=, &lt;>) <br>
+
+««««« Comandos de Definição de Dados DDL (Data Definition Language) »»»»» <br>
+
+Create table - Cria tabelas
+Sintaxe: <br> 
+
+Create table "nome_da_tabela" 
+(
+  "id_nome_da_tabela" "tipo de dados" "null/not null" primary key,
+  "id_tabela_estrangeira" "tipo de dados" "null/not null",
+  "Campo" "tipo de dados" "null/not null",
+  "Campo" "tipo de dados" "null/not null",
+  ...
+  Foreign key (id_tabela_estrangeira) references "tabela_estrangeira(id_tabela_estrangeira) on Delete Cascade" 
+) <br>
+
+OBS: Essa sintaxe cria uma tabela relacionada com outra tabela (A tabela "nome_da_tabela" se relaciona com a tabela "tabela_estrangeira") <br>
+
+««««« Comandos para a manipulação de dados DML (Data Manipulation Language) »»»»» <br>
+
+Insert - insere numa determinada tabela valores específicados, desde que esses valores sigam a ordem dos campos da tabela <br>
+
+Sinstaxe: Insert into "nome_da_tabela" values ('valor', 'valor',...) seguindo a ordem e o tipo de dados da tabela <br>
+ 
+Delete - Elimina dados da tabela <br>
+Sitnaxe: Delete from "nome da tabela" <br>
+
+Select - seleciona  e apresenta dados de uma determinada tabela <br>
+Sintaxe: select "nome_da/s_coluna" from "nome_da_tabela" <br>
+
+
+Update - Atualiza os dados da tabela <br>
+Sintaxe: update "nome_da_tabela" set "nome_da_coluna" = valor <br>
+
+
+Obs: Qualquer um dos comandos de manipulação Pode ser usado junto com Cláusulas para uma operação mais detalhada exceto o insert <br>
+
+«««««« Cláusulas »»»»»» <br>
+
+Where - Estabelece uma condição para manipulação dos dados <br>
+
+Sintaxe com select: select "nome_da_coluna" from "nome_da_tabela" where "coluna" = valor
+OBS: é fundamental usar o where em todas as outras cláusulas <br>
+
+Between- Manipula dados entre um valor e outro
+Sintaxe com select: select "nome_da_coluna" from "nome_da_tabela" where "coluna" between 'valor' and 'valor' <br>
+
+
+in - Manipula dados referenciados em uma lista
+Sintaxe com select: select "nome_da_coluna" from "nome_da_tabela" where "coluna" in ('valor1', 'valor2', 'valor3'...) <br>
+
+like - Manipula dados que contenham dentro de sua composição, valores descritos na query
+Sintaxe com select: select "nome_da_coluna" from "nome_da_tabela" where "coluna" like '%valor%'/'valor%'/'%valor' <br>
+
+OBS: também manipula dados que não tem um ou mais carateres definidos <br>
+Sintaxe com select: select "nome_da_coluna" from "nome_da_tabela" where "coluna" like valor_valor/_valor/valor_/valor__...valor/...__valor/valor__...
+<br>
+
+and - Opera quando todas as condições forem verdadeiras
+Sintaxe com select: select "nome_da_coluna" from "nome_da_tabela" where "coluna" = valor and "coluna" = valor <br>
+
+
+or - Opera quando ao menos uma condição for verdadeira
+Sintaxe com select: select "nome_da_coluna" from "nome_da_tabela" where "coluna" = valor or "coluna" = valor <br>
+
+
+
+
+««««« Funções predefinidas do SQL »»»»» <br>
+
+Min - Busca menor valor em uma coluna 
+Sintaxe com select: select min("nome_da/s_coluna") from "nome_da_tabela" <br>
+
+Max - Busca o maior valor em uma coluna 
+Sintaxe com select: select max("nome_da/s_coluna") from "nome_da_tabela" <br>
+
+Top - Busca os primeiros "x" valores em uma coluna 
+Sintaxe com select: select top("x") "nome_da_coluna" from "nome_da_tabela" <br>
+
+Avg - Busca a média entre os valores de uma coluna
+Sintaxe com select: select avg("nome_da_coluna") from "nome da tabela" <br>
+
+Count - Conta quantos foram os registos inseridos na tabela  <br>
+Sintaxe com select: select count("nome_da_coluna") from "nome_da_tabela" <br>
+
+sum - Soma todos os registos e apresenta uma valor total  <br>
+Sintaxe com select: select sum("nome_da_coluna") from "nome_da_tabela" <br>
+
+
+OBS: Esssas funcões podem operar com qualquer instrução de Manipulação de Dados (Select, Delete, Update, insert), juntamente com as cláusulas "Where, between, in, like, and, or" e até ainda com operadores aritméticos (+, -, *, /) <br>
+
+
+
+    </p>
+</body>
+</html>

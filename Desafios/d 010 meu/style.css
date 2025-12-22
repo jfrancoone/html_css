@@ -1,0 +1,132 @@
+@font-face {
+    font-family:'idroid' ;
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    color: white;
+    background-color: green;
+    margin: -20px;
+    text-align: center;
+}
+header > nav{
+    text-align: left;
+    margin-left: 15px;
+}
+
+header > nav > a{
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px 2px 0px 2px;
+
+}
+header > nav > a:hover{
+    color: rgb(1, 65, 1);
+    background-color: rgba(255, 255, 255, 0.486);
+}
+
+main{
+    margin: auto;
+    max-width: 850px;
+    width: auto;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+
+}
+body{
+    background-color: wheat; 
+}
+
+main > h2{
+    font-family: 'idroid';
+    color: green;
+    padding: 10px 10px 0px 10px;
+}
+
+main > h3{
+    font-family: 'idroid';
+    color: green;
+    margin: 10px;
+    padding: 3px;
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.363), white);
+}
+p, aside{
+    text-align: justify;
+    margin: 10px;
+    text-indent: 30px;
+}
+p#texto_cabeca{
+    text-align: center;
+}
+
+
+main > p > span.exposto_verde{
+    font-weight: bold;
+    color: green;
+}
+main > p > a.link_externo{
+    background-color: rgba(0, 206, 0, 0.418);
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+}
+
+footer{
+    background-color: rgb(1, 92, 1);
+    color: white;
+    margin: 30px -10px -10px -10px;
+}
+
+footer > p {
+    text-align: center;
+}
+
+div#lista{
+    margin: auto;
+    max-width: 750px;
+    width: auto;
+    background-color: rgba(0, 206, 0, 0.418);
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+div#cabeca_lista{
+    font-weight: bold;
+    margin: auto;
+    max-width: 750px;
+    width: auto;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    color: white;
+    background-color: green;
+}
+
+p#ultimo{
+    margin: 20px;
+}
+
+main > div#div_video{
+    margin: 10px 0px 10px 0px;
+    background-color: green;
+    padding: 20px;
+    max-width: 850px;
+    width: auto;
+}
+video{
+    width: 800px;
+    margin: auto;
+}
+
+main > p.imagem{
+    text-align: center;
+    text-indent: 0px;
+}
+

@@ -1,0 +1,110 @@
+@charset "utf-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url(fontes/BebasNeue-Regular.ttf) format(truetype);
+}
+
+:root{
+    --cor1: #021B27;
+    --cor2: #0A4F5A;
+    --cor3: #117175;
+    --cor4: #2CA29B;
+    --cor5: #8DD6D1;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor3));
+}
+main h1{
+    color: var(--cor1);
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bold;
+    padding: 2px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.397);
+    
+}
+main > p{ 
+    font-family: 'Bebas';
+    color: var(--cor1);
+    font-size: 20px;
+}
+
+main{
+    background-color: var(--cor4);
+    max-width: 400px;
+    min-width: 200px;
+    height: 450px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.555);
+    margin: auto;
+}
+
+div.dados{
+    max-width: 350px;
+    min-width: 150px;
+    text-align: left;
+    text-indent: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--cor5); 
+    border-radius: 15px;
+    margin: 0px 10px 15px 10px;
+    color: var(--cor5);
+}
+div#botao{
+    margin: 10px 80px;
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+div#botao p{
+    margin: 0px;
+    font-family: 'Bebas';
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--cor5);
+}
+div.dados:hover{
+    border-color: var(--cor1);
+    transition-duration: .5s;
+}
+
+main a#esqueceu_senha{
+    font-family: 'Bebas';
+    text-decoration: none;
+    font-size: 14px;
+    margin: 20px 0px 0px 0px;
+    color: var(--cor3);
+}
+main a#esqueceu_senha:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+    transition-duration: .2s;
+}
+
+div#botao:hover{
+    background-color: var(--cor2);
+    transition-duration: .2s;
+}
+
+
+footer{
+    text-align: center;
+    width: 400px;
+    background-color: var(--cor1);
+    margin: auto;
+    color: var(--cor5);
+    margin-top: -30px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 6px 0px;
+}
+
+footer p{
+    margin: 0px;
+}
