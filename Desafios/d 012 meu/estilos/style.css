@@ -52,7 +52,7 @@ section.parallax{
 div.parallax_1{
     position: relative;
     background-color: black;
-    background-image: url('imagens/background001.jpg');
+    background-image: url('../imagens/background001.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: right bottom;
@@ -70,7 +70,7 @@ section.parallax{
 div.parallax_2{
     position: relative;
     background-color: black;
-    background-image: url('imagens/background002.jpg');
+    background-image: url('../imagens/background002.jpg');
     background-attachment: fixed;
     background-size: cover;
     height: 400px;
