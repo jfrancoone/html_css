@@ -1,0 +1,88 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Passion One';
+    src: url('fontes/PassionOne-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sriracha';
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100h;
+}
+main{
+    font-size: 1.3em;
+}
+header{
+    padding-top: 20px ;
+    min-height: 130px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Passion One';
+}
+header > h1{
+    font-size: 3.5em;
+}
+header > p > a{
+    color: white;
+}
+body > main{
+    font-family: 'Sriracha';
+}
+
+section.normal{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+section.parallax{
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    max-width: 400px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+div.parallax_1{
+    position: relative;
+    background-color: black;
+    background-image: url('imagens/background001.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right bottom;
+    height: 400px;
+    width: 100%;
+    margin: 10px 0px;
+}
+section.parallax{
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+
+div.parallax_2{
+    position: relative;
+    background-color: black;
+    background-image: url('imagens/background002.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    margin: 10px 0px;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Passion One';
+
+}
