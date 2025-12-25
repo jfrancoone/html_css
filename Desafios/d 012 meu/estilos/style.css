@@ -16,10 +16,11 @@ html, body{
     min-height: 100h;
 }
 main{
-    font-size: 1.3em;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.219);
 }
 header{
-    padding-top: 20px ;
+    padding-top: 50px ;
     min-height: 130px;
     margin-bottom: 10px;
     background-color: black;
@@ -29,9 +30,16 @@ header{
 }
 header > h1{
     font-size: 3.5em;
+    font-variant: small-caps;
+}
+
+header > p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header > p > a{
     color: white;
+    text-decoration: none;
+    font-weight: bolder;
 }
 body > main{
     font-family: 'Sriracha';
@@ -39,17 +47,23 @@ body > main{
 
 section.normal{
     margin-left: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 section.parallax{
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.486);
     background-color: rgba(0, 0, 0, 0.404);
     color: white;
-    max-width: 400px;
-    padding: 10px;
+    display: inline-block;
+    padding: 15px;
     margin-left: 20px;
     margin-bottom: 40px;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
 }
 div.parallax_1{
+    box-shadow: inset 4px 4px 9px rgba(0, 0, 0, 0.5);
     position: relative;
     background-color: black;
     background-image: url('../imagens/background001.jpg');
@@ -60,14 +74,10 @@ div.parallax_1{
     width: 100%;
     margin: 10px 0px;
 }
-section.parallax{
-    position: absolute;
-    top: 50%;
-    transform: translate(0px, -50%);
-}
 
 
 div.parallax_2{
+    box-shadow: inset 4px 4px 7px rgba(0, 0, 0, 0.5);
     position: relative;
     background-color: black;
     background-image: url('../imagens/background002.jpg');
