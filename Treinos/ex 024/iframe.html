@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+        }
+        :root{
+            --cor1: #373740;
+            --cor2: #2f3a59;
+            --cor3: #738cbf;
+            --cor4: #8593a3;
+            --cor5: #0d0d0d;
+        }
+
+        *{
+            margin: 0px;
+        }
+
+        iframe{
+            display: block;
+            margin: auto;
+            width: 75vw;
+            height: 500px;
+            border: 2px solid rgba(0, 0, 0, 0.664);
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.74);
+            border-radius: 10px;
+        }
+        header{
+            position: relative;
+            background-color: var(--cor1);
+            height: 100px;
+            color: white;
+
+        }
+        header > h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        nav{
+            background-color: var(--cor1);
+            padding: 10px;
+        }
+        nav > a:hover{
+            transition-duration: 0.5s;
+            background-color: var(--cor3);
+        }
+
+        nav > a{
+            padding: 10px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;   
+        }
+        main{
+            margin: auto;
+            background-color: white;
+            width: 80vw;
+            padding: 10px;
+        }
+        main > p{
+            text-indent: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer{
+            padding: 10px;
+            color: white;
+            background-color: var(--cor1);
+            text-align: center;
+        }
+        footer > a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Iframe Project</h1>
+    </header>
+    <nav>
+            <a href="C:\Users\João Franco\Documents\Estudo em Casa\html_css\Desafios\d 010\index.html" target="frame">Android</a>
+
+            <a href="C:\Users\João Franco\Documents\Estudo em Casa\html_css\Desafios\d 012 meu\projeto_cordel.html" target="frame">Cordel</a>
+
+            <a href="C:\Users\João Franco\Documents\Estudo em Casa\html_css\Treinos\Tela de Login\login.html" target="frame">Login</a>
+        </nav>
+    <main>
+        
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facilis delectus voluptas dolorem quos quis veritatis nobis iusto quam voluptate. Cumque esse possimus beatae harum, delectus minima nesciunt atque praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ab nostrum quis eius autem error, dicta illum, beatae assumenda debitis, tempora officia maiores dolor consequatur veniam placeat distinctio neque. Veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed dignissimos ipsam eligendi voluptatibus? Dicta expedita obcaecati officia totam facere aut et doloribus. Placeat delectus doloremque eaque aliquam, ratione quos.</p>
+
+        <iframe src="pages/page001.html" name="frame">O seu navegador não é compatível</iframe>
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facilis delectus voluptas dolorem quos quis veritatis nobis iusto quam voluptate. Cumque esse possimus beatae harum, delectus minima nesciunt atque praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ab nostrum quis eius autem error, dicta illum, beatae assumenda debitis, tempora officia maiores dolor consequatur veniam placeat distinctio neque. Veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed dignissimos ipsam eligendi voluptatibus? Dicta expedita obcaecati officia totam facere aut et doloribus. Placeat delectus doloremque eaque aliquam, ratione quos.</p>
+    </main>
+    <footer>
+        <p>
+            Criado Por <a href="https://www.github.com/jfrancoone">João Franco</a> para Francoone
+        </p>
+    </footer>
+
+
+</body>
+</html>
