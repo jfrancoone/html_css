@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Responsivo</title>
+    <link rel="stylesheet" href="estilos/all.css">
+    <link rel="stylesheet" href="estilos/e_small.css" media="screen and (max-width: 480px)">
+    <link rel="stylesheet" href="estilos/small.css" media="screen  and (min-width: 480px) and (max-width: 768px)">
+    <link rel="stylesheet" href="estilos/medium.css" media="screen and (min-width: 768px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="estilos/large.css" media="screen and (min-width: 1024px) and (max-width: 1440px)">
+    <link rel="stylesheet" href="estilos/e_large.css" media="screen and (min-width: 1440px)">
+</head>
+<body>
+    <header>
+        <h1>Preencha os dados abaixo</h1>
+    </header>
+    <main>
+        <div id="form">
+            <form action="cadastro.php" method="post">
+                <fieldset>
+                    <legend>Dados de Nascimento</legend>
+                    <div>
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="name" id="inome">
+                    </div>
+                    <div>
+                        <label for="inomepai">Nome do Pai: </label>
+                        <input type="text" name="nomepai" id="inomepai">
+                    </div>
+                    <div>
+                        <label for="idata">Data de Nascimento: </label>
+                        <input type="date" name="data" id="idata">
+                    </div>
+                </fieldset>
+                        <fieldset>
+                    <legend>Redes Sociais</legend>
+                    <div>
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="name" id="inome">
+                    </div>
+                    <div>
+                        <label for="inomepai">Nome do Pai: </label>
+                        <input type="text" name="nomepai" id="inomepai">
+                    </div>
+                    <div>
+                        <label for="idata">Data de Nascimento: </label>
+                        <input type="date" name="data" id="idata">
+                    </div>
+                </fieldset>
+                        <fieldset>
+                    <legend>Profissão</legend>
+                    <div>
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="name" id="inome">
+                    </div>
+                    <div>
+                        <label for="inomepai">Nome do Pai: </label>
+                        <input type="text" name="nomepai" id="inomepai">
+                    </div>
+                    <div>
+                        <label for="idata">Data de Nascimento: </label>
+                        <input type="date" name="data" id="idata">
+                    </div>
+                </fieldset>
+                        <fieldset>
+                    <legend>Área de Formação </legend>
+                    <div>
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="name" id="inome">
+                    </div>
+                    <div>
+                        <label for="inomepai">Nome do Pai: </label>
+                        <input type="text" name="nomepai" id="inomepai">
+                    </div>
+                    <div>
+                        <label for="idata">Data de Nascimento: </label>
+                        <input type="date" name="data" id="idata">
+                    </div>
+                </fieldset>
+                <div id="btn">
+                    <input type="submit" value="Enviar" class="btn" id="enviar">
+                    <input type="reset" value="Limpar" class="btn" id="limpar">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

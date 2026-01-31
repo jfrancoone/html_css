@@ -1,0 +1,23 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor1: #042940;
+    --cor2: #005C53;
+    --cor3: #9FC131;
+    --cor4: #DBF227;
+    --cor5: #D6D58E;
+}
+main{
+    width: 100%;
+}
+fieldset{
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 30px;
+}
+input.btn{
+    width: 40vw;
+}

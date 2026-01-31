@@ -1,0 +1,17 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor1: #042940;
+    --cor2: #005C53;
+    --cor3: #9FC131;
+    --cor4: #DBF227;
+    --cor5: #D6D58E;
+}
+fieldset{
+    margin: auto;
+    margin-bottom: 30px;
+    width: 80vw;
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor1: #042940;
+    --cor2: #005C53;
+    --cor3: #9FC131;
+    --cor4: #DBF227;
+    --cor5: #D6D58E;
+}
+fieldset{
+    display: inline-block;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+div#btn{
+    display: block;
+    margin: auto;
+}
