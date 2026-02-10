@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        div.dad{
+            background-color: lightskyblue;
+            width: 100vw;
+            height: 100vh;
+            display: flex;        
+        }
+        div#left{
+            height: 100vh;
+            width: 20vw;
+            background-color: lightgrey;
+        }
+        div#right{
+            
+            height: 100vh;
+            width: 80vw;            
+            background-color: lightsalmon;
+        }
+        div#granfather{
+            display: flex;
+            flex-wrap: wrap;
+            width: 80vw;
+            height: 86px;
+            background-color: lime;
+        }
+        div.grandson{
+            flex: auto;
+            background-color: lightgreen;
+            height: 70px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.411);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+            margin: 5px 5px 0px 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dad">
+        <div class="kid" id="left">
+
+        </div>
+        <div class="kid" id="right">
+            <div id="granfather">
+                <div class="grandson"></div>
+                <div class="grandson"></div>
+                <div class="grandson"></div>
+                <div class="grandson"></div>
+                <div class="grandson"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
