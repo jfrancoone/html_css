@@ -1,0 +1,19 @@
+@charset "UTF-8";
+header{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+header > div#burguer{
+    display: none;
+}
+header > menu{
+    display: block;
+}
+header > menu > a{
+    display: inline;
+    margin: 5px;
+    border-radius: 7px;
+}

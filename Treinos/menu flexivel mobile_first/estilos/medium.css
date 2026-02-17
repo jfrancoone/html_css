@@ -1,0 +1,28 @@
+@charset "UTF-8";
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    justify-content: flex-start;
+}
+header{
+    height: 102px;
+    padding-bottom: 15px;
+}
+header > h1{
+    align-self: flex-start;
+}
+header > div#burguer{
+    display: none;
+}
+header > menu{
+    display: block;
+    position: absolute;
+    left: 5px;
+    align-self: flex-end;
+}
+header > menu > a{
+    display: inline;
+    margin: 5px;
+    border-radius: 7px;
+}

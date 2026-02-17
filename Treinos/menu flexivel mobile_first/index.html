@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/medium.css" media="screen and (min-width: 769px) and (max-width: 1024px)"> 
+    <link rel="stylesheet" href="estilos/big.css" media="screen and (min-width: 1025px)">
+    <title>Menú Responsivo</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <div id="burguer" onclick="clickmenu()">
+            <img src="imagens/ic_menu_account_list.png" alt="icon-menu" id="icon-menu">
+        </div>
+        <menu id="navbar">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </menu>
+    </header>
+    <main>
+        <section>
+            <h1>Teste de Flexbox</h1>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quo nam neque, nostrum molestias deleniti impedit necessitatibus tempore molestiae ratione dolorem, voluptatum quas at earum, error excepturi ipsam veritatis aliquam!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, corporis sequi! Sapiente ab voluptatibus quam autem iusto consequuntur nemo voluptatem. Consequuntur et perspiciatis rem voluptatibus corporis unde, quos eaque sint.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et expedita quaerat, nemo cumque dolores dolor ut itaque molestias facere vitae repellat ullam, amet quae vel suscipit! Ipsa fuga perspiciatis vero?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet, voluptates laboriosam excepturi, reprehenderit harum at nam officia omnis iste assumenda vel corrupti similique dolorem ducimus quasi eligendi repudiandae! Quia!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga corporis magni quibusdam. Velit deleniti ut reprehenderit earum blanditiis quibusdam nihil inventore tempora, quia eaque, exercitationem asperiores neque maiores iure. Voluptatibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, ullam quis assumenda magni tempore omnis quos veniam, illum deserunt reiciendis voluptatem aut distinctio dolore excepturi fugiat vel maiores dignissimos facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint quos voluptatem dolorum inventore voluptates et, cum accusamus vero cupiditate eum. Vero facilis non exercitationem sed. Iusto amet porro fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ducimus. Esse aliquid praesentium a voluptate, maxime laboriosam, natus soluta perferendis quas numquam molestias. Distinctio, dicta non ad velit accusamus laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione incidunt sapiente optio possimus voluptatum molestias, expedita explicabo voluptatem vitae error dicta nobis maxime aspernatur totam vero quia laborum non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda explicabo amet id, vel sed culpa. Enim deserunt quas ipsam similique praesentium laudantium ipsa expedita fugiat. Dicta ad quasi modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque deserunt aut, accusamus expedita ipsum explicabo dolorum? Voluptatibus eius consequuntur neque autem aspernatur! Porro explicabo recusandae eum dolorum harum provident! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo veritatis cum aperiam eum qui dolor consectetur! Accusantium magnam maiores est fuga itaque cumque incidunt eius fugit tenetur, minus harum in.
+                </p>
+            </article>
+        </section>
+    </main>
+    <script>
+        function clickmenu(){
+            if(navbar.style.display == 'block') {
+                navbar.style.display = 'none'
+            } else {
+                navbar.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
