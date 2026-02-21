@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 50, 97);
+    display: flex;
+    flex-flow: column nowrap;
+}
+div#froggy{
+    width: 100px;
+    height: 100px;
+    background-color:rgba(0, 102, 17, 0.555);
+    align-self: flex-end;    
+    position: relative;
+    top: -110px;
+    right: 10px;
+}
+div#target{
+    width: 120px;
+    height: 120px;
+    background-color: aqua;
+    align-self: flex-end;
+}
