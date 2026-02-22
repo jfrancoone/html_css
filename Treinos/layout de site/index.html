@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>My Site</title>
+    <style>
+        main{
+            box-sizing: border-box;
+            width: 97vw;
+            height: 97vh;
+            display: grid;
+            grid-template: repeat(3,1fr) / repeat(4, 1fr);
+            gap: 2px;
+        }
+        main div{
+            border: 3px solid red;
+        }
+        div#caixa1{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        div#caixa2{
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        div#caixa3{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
+    </style>
+</head>
+<body>
+    <main id="container">
+        <div id="caixa1">CAIXA 1</div>
+        <div id="caixa2">CAIXA 2</div>
+        <div id="caixa3">CAIXA 3</div>
+    </main>
+</body>
+</html>
