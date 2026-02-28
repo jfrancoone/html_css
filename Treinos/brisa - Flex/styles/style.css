@@ -1,0 +1,98 @@
+@charset "UTF-8";
+*{
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+:root{
+    --cor1: #174873;
+    --cor2: #3D5E73;
+    --cor3: #A7C6D9;
+    --cor4: #0DA6A6;
+    --cor5: #0CF2DB;
+}
+header{
+    width: 100%;
+    height: 500px;
+}
+header nav#acess_menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0d2942;
+    padding: 15px;
+    color: var(--cor5);
+}
+header nav#acess_menu div#site{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+header nav#acess_menu div#options a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+    border: 1px solid var(--cor5);
+    padding: 10px;
+    border-radius: 10px;
+}
+header nav#acess_menu div#options a:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+    transition: 0.3s;
+}
+header div#img{
+    height: 400px;
+    width: 100%;
+    background-color: var(--cor1);
+}
+header nav#main_menu{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #0d2942;
+}
+header nav#main_menu a{
+    text-decoration: none;
+    color: var(--cor5);
+    position: relative;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+header nav#main_menu a::after{
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: var(--cor5);
+    transition: .3s ease-in-out;
+}
+header nav#main_menu a:hover::after{
+    width: 100%;
+}
+main{
+    margin: 20px;
+}
+main section#text_img{
+    border: 2px solid var(--cor1);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.521);
+}
+
+main section#text_img p{
+    flex: 0 1 450px;
+}
+/*Definir as Caixas Com o Hover Bonitão*/
